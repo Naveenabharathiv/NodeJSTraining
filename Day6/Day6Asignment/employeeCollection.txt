@@ -1,0 +1,10 @@
+use dxcDb
+db.org.insertOne({empId:"202302001", empName:"Amala", salary: 10000});
+db.org.insertMany([{empId:"202302002", empName:"Binta", salary: 10000},
+{empId:"202302003", empName:"Clara", salary: 12000},
+{empId:"202302004", empName:"Cibhi", salary: 14000},
+{empId:"202302005", empName:"Abhi", salary: 15000},
+{empId:"202302006", empName:"Bhuvi", salary: 20000},
+{empId:"202302007", empName:"Davis", salary: 22000},
+{empId:"202302008", empName:"Derik", salary: 25000}]);
+

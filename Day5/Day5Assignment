@@ -1,0 +1,16 @@
+//1. DELETE Request -- if(request.method == "DELETE"){}
+var http = require('http');
+const port = 3000;
+
+var server = http.createServer((request, response) => {
+    if(request.url == "/library") {
+        if(request.method == "DELETE") {
+            response.end("Delete request completed");
+        }
+    }
+})
+
+server.listen(port, () => {
+    console.log(`Server is running at localhost with port number : ${port}`)
+})
+//2. get /post?postsName=completeassignments
